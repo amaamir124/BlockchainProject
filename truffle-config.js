@@ -11,11 +11,14 @@ module.exports = {
   },
   contracts_directory: './src/contracts/',
   contracts_build_directory: './src/abis/',
-  compilers: {
+  
+  compilers: { 
     solc: {
+      version: "0.5.16", // Specify the desired Solidity compiler version
       optimizer: {
         enabled: true,
         runs: 200
+  
       }
     }
   }
